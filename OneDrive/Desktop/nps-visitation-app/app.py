@@ -17,7 +17,7 @@ st.title("national parks — seasonality & overnight use")
 st.caption("data: nps public use statistics (2000 – last calendar year)")
 
 # load data
-data_path = Path("data/Query Builder for Public Use Statistics (2000- Last Calendar Year).csv")
+data_path = Path("data/nps_visitation.csv")
 if data_path.exists():
     df = pd.read_csv(data_path)
     st.caption(f"loaded data from: `{data_path.name}`")
